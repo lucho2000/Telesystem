@@ -1,51 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TeleSystem</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+  </svg>
+
 </head>
 <body>
-    <form>
 
-        <p> Fecha: <label>
-            <input type="text" name="fecha" placeholder="fecha">
-        </label></p>
-        <br>
-        <p>Nombre: <label>
-            <input type="text" name="nombrecompleto"  placeholder="nombre">
-        </label></p>
-        <br>
-        <p>Incidencia: <label>
-            <input type="text" name="incidencia"  placeholder="incidencia">
-        </label></p>
-        <br>
-        <p>Tipo: <label>
-            <input type="text" name="nombrecompleto"  placeholder="TIPO">
-        </label></p>
 
-        <p>
-            Descripcion del problema: <br>
+<i class="bi bi-arrow-left"></i>
+<i class="bi bi-arrow-right"></i>
+<i class="bi bi-house"></i>
 
-            <label>
-                <textarea rows="10" cols="50"></textarea>
-            </label> <label>
-            <input type="text" name="descripcion">
-        </label>
 
-            <a href="descargar como pdf">  </a>
-        </p>
-        <br>
-        <p>Zona PUCP: </p>
-        <br> <br> <br> <br>
-        <a href="">click para ver foto </a>
-        <br> <br>
-        <a href="">descargar como pdf </a>
-        <br> <br>
-        <a href="" >descargar como xls </a>
-        <br> <br>
-        <a href="">descargar como txt </a>
-        <br> <br>
-        <input type="submit" value="Enviar la información">
-    </form>
+<br> <br>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">Fecha</span>
+  <input type="text" class="form-control" placeholder="dd/mm/aa" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon2">Nombre</span>
+  <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon3">Incidencia</span>
+  <input type="text" class="form-control" placeholder="Incidencia" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon4">Tipo</span>
+  <input type="text" class="form-control" placeholder="Tipo" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+
+<p>Zona PUCP: </p>
+<center><img src="mapa-pucp.jpeg" alt="perfil foto" style="width:500px;height:300px;"></center>
+
+<br>
+<p>Foto:
+  <a href="#" class="link-primary">Click para ver foto</a>
+</p>
+
+
+<div class="row">
+
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-link">Descargar como XLS</button>
+  </div>
+
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-link">Descargar como pdf</button>
+  </div>
+
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-link">Descargar como txt</button>
+  </div>
+</div>
+
+
+
+<p style="margin-top: 20px">Ingrese el nuevo estado de la incidencia: </p>
+<div style = "margin-top: 10px;" class="input-group mb-3">
+  <select class="form-select" id="inputGroupSelect02">
+    <option selected>Seleccione...</option>
+    <option value="1">Registrado</option>
+    <option value="2">Atendida</option>
+    <option value="3">En proceso</option>
+  </select>
+  <label class="input-group-text" for="inputGroupSelect02">Opciones</label>
+</div>
+
+<br><br>
+<p>
+  Descripcion del problema: <br>
+  <textarea rows="10" cols="100" id="descripcion" name="descripcion" placeholder="Describa la incidencia"></textarea>
+  <!--<input type="text" style="font-size:18pt;height:300px;width:300px;margin-left: 250px">-->
+
+</p>
+
+<!-- Button trigger modal -->
+<div style="text-align: center">
+  <button style="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Registrar Cambios
+  </button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">ALERTA</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Seguro que desea cambiar
+        el estado de la incidencia?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Si</button>
+        <button type="button" class="btn btn-primary">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
