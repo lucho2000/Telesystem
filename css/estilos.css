@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
 	//background-color:rgb(197,221,255);
-    background-image: linear-gradient(to right,rgb(190,221,255,0.75),rgb(190,221,255,0.75)) ,url(../images/fondo.jpg);
+    background-image: linear-gradient(to right,rgb(4,35,84,0.75),rgb(4,35,84,0.75)) ,url(../images/fondo.jpg);
 	//background-blend-mode:luminosity;
     background-position: center;
     background-repeat: no-repeat;
