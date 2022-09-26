@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TeleSystem</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-  </svg>
+
+  <style>
+    .action_btn {
+      width: 200px;
+      margin: 0 auto;
+      display: inline;}
+
+    .buttons {
+      width: 200px;
+      margin: 0 auto;
+      display: inline;}
+
+  </style>
 
 </head>
 <body>
@@ -27,29 +30,37 @@
 
 <br> <br>
 <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">Fecha</span>
-  <input type="text" class="form-control" placeholder="dd/mm/aa" aria-label="Username" aria-describedby="basic-addon1">
+  <label>Fecha</label>
+  <label>
+    <input class="form-control" type="text" placeholder="Fecha">
+  </label>
 </div>
 
 <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon2">Nombre</span>
-  <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+  <label>nombre</label>
+  <label>
+    <input class="form-control" type="text" placeholder="nombre">
+  </label>
 </div>
 
 <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon3">Incidencia</span>
-  <input type="text" class="form-control" placeholder="Incidencia" aria-label="Username" aria-describedby="basic-addon1">
+  <label>incidencia</label>
+  <label>
+    <input class="form-control" type="text" placeholder="incidencia">
+  </label>
 </div>
 
 
 <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon4">Tipo</span>
-  <input type="text" class="form-control" placeholder="Tipo" aria-label="Username" aria-describedby="basic-addon1">
+  <label>tipo de incidencia</label>
+  <label>
+    <input class="form-control" type="text" placeholder="tipo de incidencia">
+  </label>
 </div>
 
 
 <p>Zona PUCP: </p>
-<div style="text-align: center;"><img src="../../images/mapa-pucp.jpeg" alt="perfil foto" style="width:500px;height:300px;"></div>
+<center><img src="mapa-pucp.jpeg" alt="perfil foto" style="width:500px;height:300px;"></center>
 
 <br>
 <p>Foto:
@@ -57,49 +68,51 @@
 </p>
 
 
-<div class="row">
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Descargar como
+  </a>
 
-  <div class="col-sm-3">
-    <button type="button" class="btn btn-link">Descargar como XLS</button>
-  </div>
-
-  <div class="col-sm-3">
-    <button type="button" class="btn btn-link">Descargar como pdf</button>
-  </div>
-
-  <div class="col-sm-3">
-    <button type="button" class="btn btn-link">Descargar como txt</button>
-  </div>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">PDF</a></li>
+    <li><a class="dropdown-item" href="#">XML</a></li>
+    <li><a class="dropdown-item" href="#">TXT</a></li>
+  </ul>
 </div>
 
+<br>
+<p style="margin-top: 20px">Estado de la incidencia: </p>
 
-
-<p style="margin-top: 20px">Ingrese el nuevo estado de la incidencia: </p>
-<div style = "margin-top: 10px;" class="input-group mb-3">
-  <select class="form-select" id="inputGroupSelect02">
-    <option selected>Seleccione...</option>
-    <option value="1">Registrado</option>
-    <option value="2">Atendida</option>
-    <option value="3">En proceso</option>
-  </select>
-  <label class="input-group-text" for="inputGroupSelect02">Opciones</label>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+  <label class="form-check-label" for="flexRadioDefault2">
+    Atendido
+  </label>
 </div>
 
 <br><br>
-<p>
-  Descripcion del problema: <br>
-  <label for="descripcion"></label><textarea rows="10" cols="100" id="descripcion" name="descripcion" placeholder="Describa la incidencia"></textarea>
-  <!--<input type="text" style="font-size:18pt;height:300px;width:300px;margin-left: 250px">-->
-
-</p>
-
-<!-- Button trigger modal -->
-<div style="text-align: center">
-  <button style="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Registrar Cambios
-  </button>
+<div class="form-floating">
+  <p>
+    Descripcion del problema: <br>
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+  </p>
 </div>
 
+
+<!-- Button trigger modal -->
+
+<div class="buttons">
+
+  <div class="action_btn">
+
+    <button name="submit" class="btn btn-primary" type="submit" value="Save" onclick="myFunction()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrar cambios</button>
+    <button name="submit" class="btn btn-primary" type="submit" value="Cancel" onclick="myFunction2()" >Cancelar cambios</button>
+
+    <p id="saved"></p>
+
+  </div>
+
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -122,6 +135,7 @@
 </div>
 
 
+  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
