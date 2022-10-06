@@ -17,7 +17,7 @@
     <body class="fixed-navbar">
         <div class="page-wrapper">
             <!-- START HEADER-->
-            <header class="header" style="height: 72px;">
+            <header class="header">
                 <div class="page-brand">
                     <a class="link">
                         <span class="brand">Administrador</span>
@@ -32,13 +32,13 @@
                         </li>
                     </ul>
                     <!-- END TOP-LEFT TOOLBAR-->
-                    <img src="../../images/logoTelesystem.png" alt="logo" style="border-top-style: solid;border-bottom-width: 0;border-bottom-style: solid;border-right-width: 0;border-right-style: solid;border-left-width: 0;border-left-style: solid;margin-top: 0px;margin-right: 25px;height: 67px;width: 220px;border-top-width: 0px;">
+                    <img src="../../images/logoTelesystem.png" alt="logo" style="border-top-style: solid;border-bottom-width: 0;border-bottom-style: solid;border-right-width: 0;border-right-style: solid;border-left-width: 0;border-left-style: solid;margin-top: 55px;margin-right: 25px;border-top-width: 0;">
                 </div>
             </header>
             <!-- END HEADER-->
             <!-- START SIDEBAR-->
             <nav class="page-sidebar" id="sidebar">
-                <div id="sidebar-collapse" style="margin-top: 20px;">
+                <div id="sidebar-collapse">
                     <ul class="side-menu metismenu">
                         <li>
                             <a href="tabla_usuarios_admin.html"><img src="../../images/person-lines-fill.svg" alt="Bootstrap" width="25" height="25">
@@ -66,8 +66,8 @@
             <!-- END SIDEBAR-->
         <div class="content-wrapper">
             <!-- START PAGE CONTENT-->
-            <div class="page-heading" style="  margin-top: 30px;">
-                <h1 class="page-title"><b>Registro de usuario</b></h1>
+            <div class="page-heading">
+                <h1 class="page-title">Registro de usuario</h1>
             </div>
             <div class="page-content fade-in-up">
                 <div class="row">
@@ -82,70 +82,73 @@
                             </div>
                             <div class="ibox-body">
                                 <form>
-                                    <div class="row">
-                                        <div class="col-sm-6 form-group">
-                                            <label>Nombre</label>
-                                            <label>
-                                                <input class="form-control" type="text" placeholder="Nombre">
-                                            </label>
+                                    <div class="row g-2">
+                                        <div class="col-md">
+                                            <div class="form-floating" style="margin-bottom: 5px;">
+                                                <input type="text" class="form-control" id="floatingInputGrid1" placeholder="Nombre">
+                                                <label for="floatingInputGrid1">Nombre</label>
+                                            </div>
                                         </div>
-                                        <div class="col-sm-6 form-group">
-                                            <label>Barrios</label>
-                                            <label>
-                                                <input class="form-control" type="text" placeholder="Apellido">
-                                            </label>
+                                        <div class="col-md">
+                                            <div class="form-floating" style="margin-bottom: 5px;">
+                                                <input type="text" class="form-control" id="floatingInputGrid2" placeholder="Apellido">
+                                                <label for="floatingInputGrid2">Apellido</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-md">
+                                            <div class="form-floating" style="margin-bottom: 5px;">
+                                                <input type="text" class="form-control" id="floatingInputGrid3" placeholder="Código PUCP">
+                                                <label for="floatingInputGrid3">Código PUCP</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">
+                                            <div class="form-floating" style="margin-bottom: 5px;">
+                                                <input type="text" class="form-control" id="floatingInputGrid4" placeholder="Correo PUCP">
+                                                <label for="floatingInputGrid4">Correo PUCP</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-md">
+                                            <div class="form-floating" style="margin-bottom: 5px;">
+                                                <input type="text" class="form-control" id="floatingInputGrid5" placeholder="DNI">
+                                                <label for="floatingInputGrid4">DNI</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md">
+                                            <div class="form-floating" style="margin-bottom: 5px;">
+                                                <input type="text" class="form-control" id="floatingInputGrid6" placeholder="Celular">
+                                                <label for="floatingInputGrid6">Celular</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-6 form-group">
-                                            <label>Código PUCP</label>
-                                            <label>
-                                                <input class="form-control" type="text" placeholder="Código">
-                                            </label>
+                                        <div class="col-md">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="floatingSelectGrid1">
+                                                    <option selected>Categoría PUCP</option>
+                                                    <option value="1">Alumno</option>
+                                                    <option value="2">Adminsitrativo</option>
+                                                    <option value="3">Jefe de práctica</option>
+                                                    <option value="4">Profesor</option>
+                                                    <option value="5">Egresado</option>
+                                                </select>
+                                                <label for="floatingSelectGrid1">Categoría</label>
+                                            </div>
                                         </div>
-                                        <div class="col-sm-6 form-group">
-                                            <label>Correo PUCP</label>
-                                            <label>
-                                                <input class="form-control" type="text" placeholder="Correo">
-                                            </label>
+                                        <div class="col-md">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="floatingSelectGrid2">
+                                                    <option selected>Rol de usuario</option>
+                                                    <option value="1">Usuario PUCP</option>
+                                                    <option value="2">Seguridad</option>
+                                                </select>
+                                                <label for="floatingSelectGrid2">Rol</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6 form-group">
-                                            <label>DNI</label>
-                                            <label>
-                                                <input class="form-control" type="text" placeholder="DNI">
-                                            </label>
-                                        </div>
-                                        <div class="col-sm-6 form-group">
-                                            <label>Celular</label>
-                                            <label>
-                                                <input class="form-control" type="text" placeholder="Celular">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6 form-group">
-                                            <label>Categoría PUCP</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Categoría</option>
-                                                <option value="1">Alumno</option>
-                                                <option value="2">Administrativo</option>
-                                                <option value="3">Jefe de práctica</option>
-                                                <option value="4">Profesor</option>
-                                                <option value="5">Egresado</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-6 form-group">
-                                            <label>Rol</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Rol</option>
-                                                <option value="1">Usuario PUCP</option>
-                                                <option value="2">Seguridad</option>
-                                            </select>
-                                            <div style="color:#FF0000;"><p text-align="center;" style="margin-top: 10px;" class="font-weight-bold">Todos los campos son obligatorios.</p></div>
-
-                                        </div>
+                                        <div style="color:#FF0000;"><p text-align="center;" style="margin-top: 10px;" class="font-weight-bold">Todos los campos son obligatorios.</p></div>
                                     </div>
                                     <div class="form-group">
                                         <button class="btn btn-default" type="submit">Registrar</button>
