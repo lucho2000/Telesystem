@@ -17,7 +17,7 @@
     <body class="fixed-navbar">
         <div class="page-wrapper">
             <!-- START HEADER-->
-            <header class="header">
+            <header class="header" style="height: 72px;">
                 <div class="page-brand">
                     <a class="link">
                         <span class="brand">Administrador</span>
@@ -32,13 +32,13 @@
                         </li>
                     </ul>
                     <!-- END TOP-LEFT TOOLBAR-->
-                    <img src="../../images/logoTelesystem.png" alt="logo" style="border-top-style: solid;border-bottom-width: 0;border-bottom-style: solid;border-right-width: 0;border-right-style: solid;border-left-width: 0;border-left-style: solid;margin-top: 55px;margin-right: 25px;border-top-width: 0;">
+                    <img src="../../images/logoTelesystem.png" alt="logo" style="border-top-style: solid;border-bottom-width: 0;border-bottom-style: solid;border-right-width: 0;border-right-style: solid;border-left-width: 0;border-left-style: solid;margin-top: 0px;margin-right: 25px;height: 67px;width: 220px;border-top-width: 0px;">
                 </div>
             </header>
             <!-- END HEADER-->
             <!-- START SIDEBAR-->
             <nav class="page-sidebar" id="sidebar">
-                <div id="sidebar-collapse">
+                <div id="sidebar-collapse" style="margin-top: 20px;">
                     <ul class="side-menu metismenu">
                         <li>
                             <a href="tabla_usuarios_admin.html"><img src="../../images/person-lines-fill.svg" alt="Bootstrap" width="25" height="25">
@@ -66,8 +66,8 @@
             <!-- END SIDEBAR-->
             <div class="content-wrapper">
                 <!-- START PAGE CONTENT-->
-                <div class="page-heading">
-                    <h1 class="page-title" style="font-size: 40px; font-weight: bold"> Cambio de contraseña</h1>
+                <div class="page-heading" style="  margin-top: 30px;">
+                    <h1 class="page-title"><b>Cambio de contraseña</b></h1>
                 </div>
                 <div class="page-content fade-in-up">
                     <div class="ibox">
@@ -81,42 +81,50 @@
                                 • Que la contraseña contenga al menos un número. <br>
                                 • Que la contraseña contenga al menos un caracter especial.<br>
                                 • Que la contraseña contenga al menos una mayúscula. <br></p>
+                            <div class="container text-center" style="padding-top: 50px" >
+                                <div class="row justify-content-md-center gx-5">
+                                    <div class="col" style="padding-top: 5px">
+                                        <p style="font-weight: bold"> Contraseña </p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="password"></label><input class="form-control" id="password" type="password" name="password" placeholder="Contraseña">
+                                        </div>
+                                    </div>
 
-                            <div class="col-md-6 offset-md-3" style="padding-top: 35px">
-                                <span class="anchor" id="formChangePassword"></span>
-                                <!-- form card change password -->
-                                <div >
 
-                                    <div class="card-body">
-                                        <form class="form" role="form" autocomplete="off">
-                                            <div class="form-group">
-                                                <label for="inputPasswordOld" style="font-weight: bold; font-size: 17px">Contraseña actual</label>
-                                                <input type="password" class="form-control" id="inputPasswordOld" required="" style="margin-top: 7px">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputPasswordNew" style="font-weight: bold; padding-top: 18px; font-size: 17px" >Nueva contraseña</label>
-                                                <input type="password" class="form-control" id="inputPasswordNew" required="" style="margin-top: 7px">
-                                                <span class="form-text small text-muted">
-                                            La contraseña debe tener 8-16 caracteres, y <em>no</em> contener espacios.
-                                        </span>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputPasswordNewVerify" style="font-weight: bold; padding-top: 18px; font-size: 17px">Confirmar nueva contraseña</label>
-                                                <input type="password" class="form-control" id="inputPasswordNewVerify" required="" style="margin-top: 7px">
-                                                <span class="form-text small text-muted">
-                                            Para confirmar, escriba su nueva contraseña nuevamente.
-                                        </span>
-                                            </div>
-                                            <div class="form-group" style="margin-top: 20px">
-                                                <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size: 18px; border-color: #0d6aad; background-color: #0f4bac; ">Aceptar y Cambiar</button>
-                                            </div>
-                                        </form>
+                                </div>
+
+                                <div class="row justify-content-md-center gx-5">
+                                    <div class="col " style="padding-top: 5px">
+                                        <p style="font-weight: bold"> Nueva Contraseña </p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label>
+                                                <input class="form-control" type="password" name="password_confirmation" placeholder="Nueva Contraseña">
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- /form card change password -->
 
+                                <div class="row justify-content-md-center gx-5">
+                                    <div class="col" style="padding-top: 5px">
+                                        <p style="font-weight: bold"> Confirmar Nueva Contraseña </p>
+                                    </div>
+                                    <div class="col ">
+                                        <div class="form-group">
+                                            <label>
+                                                <input class="form-control" type="password" name="password_confirmation" placeholder="Confirmar Nueva Contraseña">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="padding-left: 170px; padding-top: 20px">
+                                    <button type="button" class="btn btn-primary">Aceptar y Cambiar</button>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
