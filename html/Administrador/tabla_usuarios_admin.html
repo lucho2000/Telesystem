@@ -130,7 +130,7 @@
                                     <td>Leonardo Abanto</td>
                                     <td>20200454</td>
                                     <td>Seguridad</td>
-                                    <td><a href="">Ver detalle</a></td>
+                                    <th><u><button name="submit" class="btn btn-primary" type="submit" value="Save" onclick="myFunction()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Editar Usuario</button></u></th>
                                 </tr>
                                 <tr>
                                     <td style="text-align:center;"><label>
@@ -192,6 +192,129 @@
             });
         })
     </script>
+    <script>
+        function xaea12() {
+            document.getElementById('floatingInputGrid1').disabled = false;
+        }
+        function xaea13() {
+            document.getElementById('floatingInputGrid2').disabled = false;
+        }
+        function xaea14() {
+            document.getElementById('floatingInputGrid3').disabled = false;
+        }
+        function xaea15() {
+            document.getElementById('floatingInputGrid4').disabled = false;
+        }
+        function xaea16() {
+            document.getElementById('floatingInputGrid5').disabled = false;
+        }
+        function xaea17() {
+            document.getElementById('floatingInputGrid6').disabled = false;
+        }
+        function xaea18() {
+            document.getElementById('floatingSelectGrid1').disabled = false;
+        }
+        function xaea19() {
+            document.getElementById('floatingSelectGrid2').disabled = false;
+        }
+
+    </script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Edición de Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return false">
+                        <div class="row g-2">
+                            <div class="col-md">
+                                <div class="form-floating div-barra-lateral" style="margin-bottom: 5px;">
+                                    <input class="form-control" type="text" id="floatingInputGrid1" placeholder="Nombre" aria-label="Disabled input example" disabled="disabled">
+                                    <label for="floatingInputGrid1">Nombre</label>
+                                    <button onclick="xaea12()"><i class="bi bi-pencil xaea12" style="color: #191919"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating div-barra-lateral" style="margin-bottom: 5px;">
+                                    <input class="form-control" type="text" id="floatingInputGrid2" placeholder="Nombre" aria-label="Disabled input example" disabled="disabled">
+                                    <label for="floatingInputGrid1">Apellido</label>
+                                    <button onclick="xaea13()"><i class="bi bi-pencil xaea12" style="color: #191919"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md">
+                                <div class="form-floating div-barra-lateral" style="margin-bottom: 5px;">
+                                    <input class="form-control" type="text" id="floatingInputGrid3" placeholder="Nombre" aria-label="Disabled input example" disabled="disabled">
+                                    <label for="floatingInputGrid1">Código PUCP</label>
+                                    <button onclick="xaea14()"><i class="bi bi-pencil xaea12" style="color: #191919"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating div-barra-lateral" style="margin-bottom: 5px;">
+                                    <input class="form-control" type="text" id="floatingInputGrid4" placeholder="Nombre" aria-label="Disabled input example" disabled="disabled">
+                                    <label for="floatingInputGrid1">Código PUCP</label>
+                                    <button onclick="xaea15()"><i class="bi bi-pencil xaea12" style="color: #191919"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md">
+                                <div class="form-floating div-barra-lateral" style="margin-bottom: 5px;">
+                                    <input class="form-control" type="text" id="floatingInputGrid5" placeholder="Nombre" aria-label="Disabled input example" disabled="disabled">
+                                    <label for="floatingInputGrid1">DNI</label>
+                                    <button onclick="xaea16()"><i class="bi bi-pencil xaea12" style="color: #191919"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating div-barra-lateral" style="margin-bottom: 5px;">
+                                    <input class="form-control" type="text" id="floatingInputGrid6" placeholder="Nombre" aria-label="Disabled input example" disabled="disabled">
+                                    <label for="floatingInputGrid1">Celular</label>
+                                    <button onclick="xaea17()"><i class="bi bi-pencil xaea12" style="color: #191919"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <div class="form-floating div-barra-lateral">
+                                    <select class="form-select" id="floatingSelectGrid1" disabled="disabled">
+                                        <option selected>Categoría PUCP</option>
+                                        <option value="1">Alumno</option>
+                                        <option value="2">Adminsitrativo</option>
+                                        <option value="3">Jefe de práctica</option>
+                                        <option value="4">Profesor</option>
+                                        <option value="5">Egresado</option>
+                                    </select>
+                                    <label for="floatingSelectGrid1">Categoría</label>
+                                    <button onclick="xaea18()"><i class="bi bi-pencil xaea12" style="color: #191919"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-floating div-barra-lateral" style="left: 130px;">
+                                    <select class="form-select" id="floatingSelectGrid2" disabled="disabled">
+                                        <option selected>Rol de usuario</option>
+                                        <option value="1">Usuario PUCP</option>
+                                        <option value="2">Seguridad</option>
+                                    </select>
+                                    <label for="floatingSelectGrid2">Rol</label>
+                                    <button onclick="xaea19()"><i class="bi bi-pencil xaea12" style="color: #191919"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar cambios</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

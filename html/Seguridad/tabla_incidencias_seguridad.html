@@ -90,9 +90,7 @@
             <div class="content-wrapper">
                 <!-- START PAGE CONTENT-->
                 <div class="page-heading" style="  margin-top: 30px;">
-                    <div style="border-top-style: solid;padding-top: 10px;margin-right: 5px;border-right-style: solid;padding-right: 5px;border-right-width: 0px;border-top-width: 0px;margin-top: 5px;">
-                        <h1 class="page-title" style="font-size: 40px; font-weight: bold"><b>Incidencias PUCP</b></h1>
-                    </div>
+                    <h1 class="page-title" style="font-size: 40px; font-weight: bold"><b>Incidencias PUCP</b></h1>
                 </div>
                 <div class="page-content fade-in-up">
                     <div class="ibox">
@@ -119,7 +117,7 @@
                                         <td>En proceso</td>
                                         <td>Crítico</td>
                                         <td>2</td>
-                                        <th><u><button name="submit" class="btn btn-primary" type="submit" value="Save" onclick="myFunction()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ver detalle</button></u></th>
+                                        <th><u><button name="submit" class="btn btn-primary" type="submit" value="Save" onclick="myFunction()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver Detalle</button></u></th>
                                     </tr>
                                     <tr>
                                         <td>2022/10/18 19:20</td>
@@ -128,7 +126,7 @@
                                         <td>Registrado</td>
                                         <td>Leve</td>
                                         <td>-1</td>
-                                        <th><u><a href="incidencia_seguridad.html">Ver detalle</a></u></th>
+                                        <th><u><a href="">Ver detalle</a></u></th>
                                     </tr>
                                     <tr>
                                         <td>2022/10/18 09:25</td>
@@ -137,7 +135,7 @@
                                         <td>23</td>
                                         <td>2010/09/20</td>
                                         <td>$85,600</td>
-                                        <th><u><a href="incidencia_seguridad.html">Ver detalle</a></u></th>
+                                        <th><u><a href="">Ver detalle</a></u></th>
                                     </tr>
                                     <tr>
                                         <td>2022/05/30 15:05</td>
@@ -146,7 +144,7 @@
                                         <td>47</td>
                                         <td>2009/10/09</td>
                                         <td>$1,200,000</td>
-                                        <th><u><a href="incidencia_seguridad.html">Ver detalle</a></u></th>
+                                        <th><u><a href="">Ver detalle</a></u></th>
                                     </tr>
                                     <tr>
                                         <td>Gavin Joyce</td>
@@ -155,7 +153,7 @@
                                         <td>42</td>
                                         <td>2010/12/22</td>
                                         <td>$92,575</td>
-                                        <th><u><a href="incidencia_seguridad.html">Ver detalle</a></u></th>
+                                        <th><u><a href="">Ver detalle</a></u></th>
                                     </tr>
                                     <tr>
                                         <td>Jennifer Chang</td>
@@ -484,7 +482,7 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">detalle incidencia</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Detalle Incidencia</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -499,14 +497,14 @@
                         <div style =  "margin-left: 10px" class="input-group mb-3">
                             <label>Nombre: </label>
                             <label>
-                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="nombre">
+                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="Nombre">
                             </label>
                         </div>
 
                         <div style =  "margin-left: 10px" class="input-group mb-3">
                             <label>Incidencia: </label>
                             <label>
-                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="incidencia">
+                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="Incidencia">
                             </label>
                         </div>
 
@@ -514,7 +512,7 @@
                         <div style =  "margin-left: 10px" class="input-group mb-3">
                             <label>Tipo de incidencia: </label>
                             <label>
-                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="tipo de incidencia">
+                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="Tipo de Incidencia">
                             </label>
                         </div>
 
@@ -534,7 +532,7 @@
 
 
                         <div style =  "margin-left: 10px" class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Descargar como
                             </a>
 
@@ -558,19 +556,14 @@
                         <br><br>
                         <div style =  "margin-left: 10px" class="form-floating">
                             <p>
-                                Descripcion del problema: <br>
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                Descripción del problema: <br>
+                                <label for="floatingTextarea2"></label><textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                             </p>
                         </div>
-
-
-
-
-
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">registar cambios</button>
-                        <button type="button" class="btn btn-primary">cancelar cambios</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Registar cambios</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar cambios</button>
                     </div>
                 </div>
             </div>
