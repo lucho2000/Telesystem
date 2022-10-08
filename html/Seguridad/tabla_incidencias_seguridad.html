@@ -13,6 +13,18 @@
         <!-- THEME STYLES-->
         <link href="../../css/main.min.css" rel="stylesheet" />
         <!-- PAGE LEVEL STYLES-->
+        <style>
+            .action_btn {
+                width: 200px;
+                margin: 0 auto;
+                display: inline;}
+
+            .buttons {
+                width: 200px;
+                margin: 0 auto;
+                display: inline;}
+
+        </style>
     </head>
 
     <body class="fixed-navbar">
@@ -82,7 +94,7 @@
                                         <td>En proceso</td>
                                         <td>Crítico</td>
                                         <td>2</td>
-                                        <th><u><a href="incidencia_seguridad.html">Ver detalle</a></u></th>
+                                        <th><u><button name="submit" class="btn btn-primary" type="submit" value="Save" onclick="myFunction()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ver detalle</button></u></th>
                                     </tr>
                                     <tr>
                                         <td>2022/10/18 19:20</td>
@@ -441,6 +453,104 @@
                 });
             })
         </script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">detalle incidencia</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div style =  "margin-left: 10px" class="input-group mb-3">
+                            <label>Fecha: </label>
+                            <label>
+                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="Fecha">
+                            </label>
+                        </div>
+
+                        <div style =  "margin-left: 10px" class="input-group mb-3">
+                            <label>Nombre: </label>
+                            <label>
+                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="nombre">
+                            </label>
+                        </div>
+
+                        <div style =  "margin-left: 10px" class="input-group mb-3">
+                            <label>Incidencia: </label>
+                            <label>
+                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="incidencia">
+                            </label>
+                        </div>
+
+
+                        <div style =  "margin-left: 10px" class="input-group mb-3">
+                            <label>Tipo de incidencia: </label>
+                            <label>
+                                <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="tipo de incidencia">
+                            </label>
+                        </div>
+
+                        <div style =  "margin-left: 10px">
+                            <p>  Zona PUCP: </p>
+                        </div>
+
+                        <div>  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9080.838408815116!2d-77.0851327328001!3d-12.069237033787196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7a0bfb797e5862e!2sPontificia%20Universidad%20Cat%C3%B3lica%20del%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1665201780059!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+
+                        <br>
+                        <div style =  "margin-left: 10px">
+                            <p> Foto:
+                                <a href="#" class="link-primary">Click para ver foto</a>
+                            </p>
+                        </div>
+
+
+
+                        <div style =  "margin-left: 10px" class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Descargar como
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">PDF</a></li>
+                                <li><a class="dropdown-item" href="#">XML</a></li>
+                                <li><a class="dropdown-item" href="#">TXT</a></li>
+                            </ul>
+                        </div>
+
+                        <br>
+                        <p style="margin-top: 20px;margin-left: 10px">Estado de la incidencia: </p>
+
+                        <div style =  "margin-left: 10px" class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Atendido
+                            </label>
+                        </div>
+
+                        <br><br>
+                        <div style =  "margin-left: 10px" class="form-floating">
+                            <p>
+                                Descripcion del problema: <br>
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            </p>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">registar cambios</button>
+                        <button type="button" class="btn btn-primary">cancelar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </body>
 
 </html>
