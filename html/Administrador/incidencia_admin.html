@@ -461,7 +461,10 @@
         <script type="text/javascript">
             $(function() {
                 $('#example-table').DataTable({
-                    ColumnDefs: [{targets: 4, orderable: false}],
+                    language: {
+                        url: 'https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json'
+                    },
+                    "ColumnDefs": [{"targets": 6, "orderable": false}],
                     pageLength: 10,
                     //"ajax": './assets/demo/data/table_data.json',
                     /*"columns": [
