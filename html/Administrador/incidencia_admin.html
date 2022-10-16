@@ -115,7 +115,7 @@
                                         <td>En proceso</td>
                                         <td>Crítico</td>
                                         <td>2</td>
-                                        <th><u><a href="">Ver detalle</a></u></th>
+                                        <th><u><button name="submit" class="btn btn-primary" type="submit" value="Save" onclick="myFunction()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver Detalle</button></u></th>
                                     </tr>
                                     <tr>
                                         <td>2022/10/18 19:20</td>
@@ -478,6 +478,73 @@
                 });
             })
         </script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Detalle Incidencia</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form onsubmit="return false">
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div style =  "margin-left: 10px" class="input-group mb-3">
+                                        <label>Fecha: </label>
+                                        <label>
+                                            <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="Fecha">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div style =  "margin-left: 10px" class="input-group mb-3">
+                                        <label>Nombre: </label>
+                                        <label>
+                                            <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="Nombre">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div style =  "margin-left: 10px" class="input-group mb-3">
+                                        <label>Incidencia: </label>
+                                        <label>
+                                            <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="Incidencia">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div style =  "margin-left: 10px" class="input-group mb-3">
+                                        <label>Tipo de incidencia: </label>
+                                        <label>
+                                            <input style =  "margin-left: 10px" class="form-control" type="text" placeholder="Tipo de Incidencia">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style =  "margin-left: 10px">
+                                <p>  Zona PUCP: </p>
+                            </div>
+                        </form>
+                        <div style="text-align: center">  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9080.838408815116!2d-77.0851327328001!3d-12.069237033787196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7a0bfb797e5862e!2sPontificia%20Universidad%20Cat%C3%B3lica%20del%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1665201780059!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+                        <br>
+                        <div style =  "margin-left: 10px">
+                            <p> Foto:
+                                <a href="#" class="link-primary">Click para ver foto</a>
+                            </p>
+                        </div>
+                        <div><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Borrar incidencia</button></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 
 </html>
