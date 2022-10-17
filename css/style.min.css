@@ -25,8 +25,7 @@ body {
     position: fixed;
     opacity: .8;
     z-index: -1;
-    background: #53dfcf;
-    background: linear-gradient(to right, #53dfcf, #53dfcf); }
+    background: #ffffff;}
 
 .boxed-page {
   margin: 0 auto;
