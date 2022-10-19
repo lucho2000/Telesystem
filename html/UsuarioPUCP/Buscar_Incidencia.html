@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Usuario</title>
+    <title>Administrador</title>
     <!-- GLOBAL MAINLY STYLES-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -54,18 +54,33 @@
         <!-- START PAGE CONTENT-->
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
+                <div style="height: 20px; display: block;"></div>
                 <div class="container bg-light">
-                    <h1> Filtrar Incidencias</h1>
-                    <div class="col-md-12">
-                        Cambiar foto de perfil
-                    </div>
-                    <div class="col-md-12">
-                        Incidencias más destacadas
-                    </div>
+                    <p style="font-size: medium; font-weight: bold"> Filtrar Incidencias</p>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <td>Todas las Incidencias</td>
+                        </tr>
+                        <tr>
+                            <td>Facultad/Pabellón</td>
+                        </tr>
+                        <tr>
+                            <td>Horario del Suceso</td>
+                        </tr>
+                        <tr>
+                            <td>Estado de Incidencia</td>
+                        </tr>
+                        <tr>
+                            <td>Nivel de Urgencia</td>
+                        </tr>
+                        <tr>
+                            <td>Tipos de Incidencia</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="content-wrapper">
                     <!-- START PAGE CONTENT-->
                     <div class="page-content fade-in-up">
@@ -151,11 +166,15 @@
                     <!-- END PAGE CONTENT-->
                 </div>
             </div>
-            <div class="col-md-4 ">
+            <div class="col-md-3">
+                <div style="height: 20px; display: block;"></div>
                 <div class="row">
                     <div class="col-sm-12 col-md-12">
                         <div id="example-table_filter" class="dataTables_filter">
-                            <label style="">Buscar:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example-table"></label>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
                         </div>
                     </div>
                 </div>
