@@ -203,6 +203,9 @@ a {
 .navbar-brand {
   font-size: 40px;
   color: #000; }
+.navbar-brand:hover p{
+  color: #3CF; }
+
 
 .navbar-nav .nav-link {
   color: #000;
@@ -210,9 +213,8 @@ a {
 
 .navbar-nav:hover li a {
   opacity: 0.5; }
-  .navbar-nav:hover li a:hover {
+.navbar-nav:hover li a:hover {
     opacity: 1; }
-
 .navbar-toggler {
   font-size: 3rem; }
 
