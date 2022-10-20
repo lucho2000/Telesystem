@@ -7,7 +7,6 @@ html {
   overflow-x: hidden; }
 
 body {
-  background-image: url(../../img/fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,6 +26,7 @@ body {
     z-index: -1;
     background: #ffffff;}
 
+
 .boxed-page {
   margin: 0 auto;
   margin-top: 6rem;
@@ -34,10 +34,17 @@ body {
   position: relative;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
   border-radius: 5px; }
+.sticky-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
 
 @media (min-width: 1200px) {
   .boxed-page {
-    width: 1024px; }
+    width: 1250px; }
     .boxed-page .container {
       max-width: 1080px;
       padding-left: 30px;
@@ -200,12 +207,71 @@ a {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px; }
 
-.navbar-brand {
-  font-size: 40px;
-  color: #000; }
-.navbar-brand:hover p{
-  color: #3CF; }
 
+
+.navbar-brand {
+  font-size: 10px;
+  color: #000; }
+
+/* Style the icon inside the navigation bar */
+nav div a .icon{
+  width: 40px; /* changing the width of the icon */
+  height: 40px; /* changing the height of the icon */
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto 10px;
+
+}
+/* set the size, height, width of the icon*/
+nav div a  .icon .fa{
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: 0.5s; /* adding the transition to make it more attractive */
+  color: #000;
+}
+
+/* Change the color of icon on hover */
+nav div a  .icon .fa:last-child{
+  color: #00aced;
+}
+/* style the color and transform of the icon on hover */
+nav div a:hover .icon .fa{
+  transform: translateX(-100%); /* translate y to add the hover effect */
+}
+nav div a  .name{
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;/*make ul li a .name overflow is hidden*/
+}
+/*style the font size and set transition of the navigation menu*/
+nav div a  .name span{
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 18px; /* changing font size */
+  line-height: 20px;
+  transition: 0.5s; /* adding the transition to make it more attractive */
+
+}
+/*set and change position, top, width, left, height color of the 'class'.name span:before*/
+nav div a  .name :before span {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  left: 0;
+  height: 1005;
+  color: #00aced;
+
+}
+/*style hover effect of ul li a .name span */
+nav div a :hover .name span{
+  transform: translateY(20px);
+}
 
 .navbar-nav .nav-link {
   color: #000;
@@ -217,6 +283,8 @@ a {
     opacity: 1; }
 .navbar-toggler {
   font-size: 3rem; }
+
+
 
 .not-on-top #gtco-header-navbar {
   position: fixed;
@@ -489,3 +557,4 @@ footer {
     width: 100%; }
   .card-deck {
     flex-direction: column; } }
+.preloader-backdrop{position:fixed;top:0;bottom:0;left:0;right:0;z-index:1004;background-color:#fff}.preloader-backdrop .page-preloader{position:fixed;top:40%;left:50%;padding:10px 45px 10px 10px;margin-left:-60px;z-index:1005;font-family:Poppins;font-size:16px}.preloader-backdrop .page-preloader::before{content:'';position:absolute;top:50%;right:10px;width:20px;height:20px;margin-top:-10px;margin-left:-10px;border-top:2px solid #34495f;border-right:2px solid transparent;-webkit-border-radius:50%;border-radius:50%;-webkit-animation:loader-rotate .6s linear infinite;animation:loader-rotate .6s linear infinite}
