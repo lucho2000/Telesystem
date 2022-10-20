@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100" data-lt-installed="true">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mis Incidencias</title>
+    <meta name="description" content="Core HTML Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../../css/user.bootstrap.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+    <link href="../../css/datatables.min.css" rel="stylesheet" />
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <style>
+        html {
+            min-height: 100%;
+            position: relative;
+
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .wrapper {
+            margin: 0;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            color: white;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- Contenedor externo -->
+    <div class="container-fluid" style=" padding: 0px;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #163297;">
+            <img src="../../images/logoTelesystem.png" alt="logo" style="border-top-style: solid;border-bottom-width: 0;border-bottom-style: solid;border-right-width: 0;border-right-style: solid;border-left-width: 0;border-left-style: solid;margin-top: 0px;margin-right: 25px;height: 67px;width: 220px;border-top-width: 0px;">
+        </nav>
+    </div>
+    <div class="boxed-page" style="height: 5vh;">
+        <!-- Contenedor interno -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="inicio.html">
+                    <p>Inicio</p>
+                </a>
+                <a class="navbar-brand" href="incidencias.html">
+                    <p>Incidencias registradas</p>
+                </a>
+                <a class="navbar-brand" href="registrar.html">
+                    <p>Registrar Incidencias</p>
+                </a>
+                <a class="navbar-brand" href="misincidencias.html">
+                    <p>Mis Incidencias</p>
+                </a>
+                <a class="navbar-brand" href="usuario.html">
+                    <p>Usuario-Perfil</p>
+                </a>
+                <a class="navbar-brand" href="ayuda.html">
+                    <p>Ayuda</p>
+                </a>
+            </div>
+        </nav>
+        <div class="content-wrapper">
+            <!-- START PAGE CONTENT-->
+            <div class="page-heading" style="  margin-top: 30px;">
+                <h1 class="page-title" style="font-size: 40px; font-weight: bold"><b>Tabla de incidencias</b></h1>
+            </div>
+            <div class="page-content fade-in-up">
+                <div class="ibox">
+                    <div class="ibox-body">
+                        <table class="table table-striped table-bordered table-hover" id="example-table">
+                            <thead>
+                            <tr>
+                                <th>Nombre de la incidencia</th>
+                                <th>Usuario</th>
+                                <th>¿Reabrir incidencia?</th>
+                                <th>Estado</th>
+                                <th>N° reabierta</th>
+                                <th>Reacciones</th>
+                                <th>N° destacada</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td style="text-align:center;"><label>
+                                    <input type="checkbox">
+                                </label></td>
+                                <td>Rodrigo Barrios Inga</td>
+                                <td>20202073</td>
+                                <td>Usuario</td>
+                                <td><a href="">Ver detalle</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><label>
+                                    <input type="checkbox">
+                                </label></td>
+                                <td>Luis Ramos Torres</td>
+                                <td>20171198</td>
+                                <td>Usuario</td>
+                                <td><a href="">Ver detalle</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><label>
+                                    <input type="checkbox">
+                                </label></td>
+                                <td>Leonardo Abanto</td>
+                                <td>20200454</td>
+                                <td>Seguridad</td>
+                                <th><u><button name="submit" class="btn btn-primary" type="submit" value="Save" onclick="myFunction()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Editar Usuario</button></u></th>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><label>
+                                    <input type="checkbox">
+                                </label></td>
+                                <td>Gil Zanabria</td>
+                                <td>20200334</td>
+                                <td>Seguridad</td>
+                                <td><a href="">Ver detalle</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center;"><label>
+                                    <input type="checkbox">
+                                </label></td>
+                                <td>Danita</td>
+                                <td>20202330</td>
+                                <td>Administración</td>
+                                <td><a href="">Ver detalle</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- END PAGE CONTENT-->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
