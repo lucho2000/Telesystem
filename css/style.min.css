@@ -611,17 +611,28 @@ ul li:before {
 .sangria-filter{
  margin-right: 5px; margin-left: 15px;
 }
+
 .flex-container {
-  overflow: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
   align-content: normal;
+
+  height: 100%;
+  display: flex;
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 35em;
+  min-width: 6em;
+  max-width: 100%;
+  min-height: 6em;
 }
 
 .flex-items:nth-child {
+  overflow-y: scroll;
   display: block;
   flex-grow: 0;
   flex-shrink: 1;
