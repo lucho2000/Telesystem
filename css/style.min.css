@@ -1,5 +1,5 @@
 html {
-  font-size: 70%;
+  font-size: 75%;
   overflow-x: hidden; }
 
 body {
@@ -720,3 +720,33 @@ li a:hover{
   color: black;
 }
 
+/* Style the icon inside the navigation bar */
+nav div a .icon{
+  width: 40px; /* changing the width of the icon */
+  height: 40px; /* changing the height of the icon */
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto 10px;
+
+}
+/* set the size, height, width of the icon*/
+nav div a  .icon .fa{
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: 0.5s; /* adding the transition to make it more attractive */
+  color: #000;
+}
+
+/* Change the color of icon on hover */
+nav div a  .icon .fa:last-child{
+  color: #00aced;
+}
+/* style the color and transform of the icon on hover */
+nav div a:hover .icon .fa{
+  transform: translateX(-100%); /* translate y to add the hover effect */
+}
+.activa{
+  color:#d4af37;
+}
