@@ -558,3 +558,31 @@ footer {
   .card-deck {
     flex-direction: column; } }
 .preloader-backdrop{position:fixed;top:0;bottom:0;left:0;right:0;z-index:1004;background-color:#fff}.preloader-backdrop .page-preloader{position:fixed;top:40%;left:50%;padding:10px 45px 10px 10px;margin-left:-60px;z-index:1005;font-family:Poppins;font-size:16px}.preloader-backdrop .page-preloader::before{content:'';position:absolute;top:50%;right:10px;width:20px;height:20px;margin-top:-10px;margin-left:-10px;border-top:2px solid #34495f;border-right:2px solid transparent;-webkit-border-radius:50%;border-radius:50%;-webkit-animation:loader-rotate .6s linear infinite;animation:loader-rotate .6s linear infinite}
+
+ul {
+  list-style: none;
+}
+ul li:before {
+  content: '';
+}
+.sangria-filter{
+ margin-right: 5px; margin-left: 15px;
+}
+.flex-container {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: normal;
+}
+
+.flex-items:nth-child {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
