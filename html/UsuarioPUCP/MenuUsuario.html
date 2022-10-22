@@ -2,85 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="PerfilUsuario.css">
-    <title>Perfil del Usuario</title>
-    <meta name="description" content="Core HTML Project">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- External CSS -->
-    <link rel="stylesheet" href="user.bootstrap.min.css">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.min.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
-    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Incidencias Registradas</title>
+  <link rel="stylesheet" href="perfilUsuario.css">
+  <meta name="description" content="Core HTML Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="user.bootstrap.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.minUsuario.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+  <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 </head>
-
 <body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
-
-<div class="contenedormayor">
-    <div class="boxed-page" style="height: 10vh;">
-        <ul class="ulmenu">
-            <li class="limenu"><a href="#">Inicio</a></li>
-            <li class="limenu"><a href="#">Incidencias registradas</a></li>
-            <li class="limenu"><a href="#">Registrar incidencia</a></li>
-            <li class="limenu"><a href="#">Mis Incidencias</a></li>
-            <li class="limenu"><a href="#">Usuario - Perfil</a></li>
-            <li class="limenu"><a href="#">Ayuda</a></li>
-        </ul>
+<div class="boxed-page" style="height: 10vh;">
+  <!-- Contenedor interno -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="inicio.html">
+        <p>Inicio</p>
+      </a>
+      <a class="navbar-brand" href="incidencias.html">
+        <p>Incidencias registradas</p>
+      </a>
+      <a class="navbar-brand" href="registrar.html">
+        <p>Registrar Incidencias</p>
+      </a>
+      <a class="navbar-brand" href="misincidencias.html">
+        <p>Mis Incidencias</p>
+      </a>
+      <a class="navbar-brand" href="usuario.html">
+        <p>Usuario-Perfil</p>
+      </a>
+      <a class="navbar-brand" href="ayuda.html">
+        <p>Ayuda</p>
+      </a>
     </div>
-    <div class="home">
-        <div class="imagen">
-            <div class="img">
-                <a target="_blank" href="foto.jpg">
-                    <img src="foto.jpg" alt="Trolltunga Norway" width="190" height="200">
-                </a>
-                <p style="float: left;color: black">Nickname</p>
-                <p style="float: right;border:2px solid black; color: black">Holiwis</p>
-                <input type="button" value="Cambiar foto de perfil">
-
-            </div>
+  </nav>
+  <div class="central">
+    <div class="container-photo">
+      <div class="imagen">
+        <div class="img">
+          <a target="_blank" href="usuario.png">
+            <img src="usuario.png" alt="Trolltunga Norway" width="220" height="270">
+          </a>
         </div>
-        <div class="datos">
-            <div class="datosleft">
-                <ul class="uldatosleft">
-                    <li class="lidatos">Nombre</li>
-                    <li class="lidatos">Apellido</li>
-                    <li class="lidatos">DNI</li>
-                    <li class="lidatos">Categoria PUCP</li>
-                </ul>
-                <ul class="uldatosright">
-                    <li class="licampo">LEO</li>
-                    <li class="licampo">ABANTO</li>
-                    <li class="licampo">873298173194</li>
-                    <li class="licampo">CARTA</li>
-                </ul>
-            </div>
-            <div class="datosright">
-                <ul class="uldatosleft">
-                    <li class="lidatos">Codigo PUCP</li>
-                    <li class="lidatos">Correo PUCP</li>
-                    <li class="lidatos">Celular</li>
-                    <li class="lidatos">ROL</li>
-                </ul>
-                <ul class="uldatosright">
-                    <li class="licampo">19762098</li>
-                    <li class="licampo">a19762098@pucp.edu.pe</li>
-                    <li class="licampo">999666333</li>
-                    <li class="licampo">Usuario</li>
-                </ul>
-            </div>
-
-        </div>
+        <input style="margin-left: 70px" type="button" value="Cambiar foto de perfil">
+      </div>
+      <div class="nickname">
+        <p style="float: left;margin-left: 24px;font-size: 20px;color: black">Nickname:</p>
+        <p style="float: right;margin-right: 35px;font-size: 20px;border:1px solid black; color: black">Usuario</p>
+        <input onclick="document.location='cambio_de_contraseña.html'" style="margin-left: 74px" type="button" value="Cambiar contraseña">
+      </div>
 
     </div>
+    <div class="container-table">
+      <p style="float: left;margin-top: 40px;margin-left: 10px;font-size: 25px;color: black">Descripción</p>
+      <div class="datos">
+        <div class="datosleft">
+          <ul class="uldatosleft">
+            <li class="lidatos">Nombre:</li>
+            <li class="lidatos">Apellido:</li>
+            <li class="lidatos">DNI:</li>
+            <li class="lidatos">Categoría PUCP:</li>
+          </ul>
+          <ul class="uldatosright">
+            <li class="licampo">LEO</li>
+            <li class="licampo">ABANTO</li>
+            <li class="licampo">873298173194</li>
+            <li class="licampo">CARTA</li>
+          </ul>
+        </div>
+        <div class="datosright">
+          <ul class="uldatosleft">
+            <li class="lidatos">Código PUCP:</li>
+            <li class="lidatos">Correo PUCP:&nbsp</li>
+            <li class="lidatos">Celular:</li>
+            <li class="lidatos">ROL:</li>
+          </ul>
+          <ul class="uldatosright">
+            <li class="licampo">19762098</li>
+            <li class="licampo">a19762098@pucp.edu.pe</li>
+            <li class="licampo">999666333</li>
+            <li class="licampo">Usuario</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="mastfoot mb-3 bg-white py-4 border-top">
+    <div class="inner container">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center">
+          <p class="mb-0">&copy; 2022 TeleSystem. Todos los derechos reservados. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>.</p>
+        </div>
+
+        <div class="col-md-6">
+          <nav class="nav nav-mastfoot justify-content-md-end justify-content-center">
+            <a class="nav-link" href="#">
+              <i class="icon-facebook"></i>
+            </a>
+            <a class="nav-link" href="#">
+              <i class="icon-twitter"></i>
+            </a>
+            <a class="nav-link" href="#">
+              <i class="icon-instagram"></i>
+            </a>
+            <a class="nav-link" href="#">
+              <i class="icon-linkedin"></i>
+            </a>
+            <a class="nav-link" href="#">
+              <i class="icon-youtube"></i>
+            </a>
+            <a class="nav-link" href="#">
+              <i class="icon-pinterest"></i>
+            </a>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 </div>
-
 </body>
-
 </html>
