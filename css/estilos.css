@@ -10,12 +10,12 @@ body {
     align-items: center;
     justify-content: center;
 	//background-color:rgb(197,221,255);
-    background-image: linear-gradient(to right,rgb(4,35,84,0.75),rgb(4,35,84,0.75)) ,url(../images/fondo.jpg);
+    background-image: linear-gradient(to right,white,skyblue) ;
 	//background-blend-mode:luminosity;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: black;
 	backdrop-filter: blur(4px);
 	
 	
