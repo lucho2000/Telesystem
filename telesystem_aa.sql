@@ -281,4 +281,4 @@ insert into Incidencia (fecha,nombreIncidencia,zonaPUCP, latitud, longitud, vali
                          0,1,3,1,20201696),
                          (now(),"Accidente de semana de Ingenieria","Cancha de minas",-12.072249,-77.081994,true,"Lesion de alumno en evento",0,1,2,1,19905060);
 			 
-insert into incidenciasdestacadas (idIncidenciasDestacadas,contadorDestacado,idIncidencia) values (1,0,1),(2,0,2);
+insert into incidenciasdestacadas (idIncidenciaDestacadas,contadorDestacado,idIncidencia) values (1,0,1),(2,0,2);
