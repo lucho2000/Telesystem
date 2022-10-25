@@ -266,12 +266,6 @@
   color: grey;
 }
 
-.btn {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  padding: 3px;
-}
 
 .creme {
   background-color: #fff;
@@ -505,10 +499,6 @@
 }
 .cardcontainer:hover > .content{
   height: 200px;
-}
-.btn{
-  position: relative;
-  top: 20px;
 }
 #heart{
   cursor: pointer;
