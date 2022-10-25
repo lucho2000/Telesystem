@@ -279,4 +279,6 @@ insert into Incidencia (fecha,nombreIncidencia,zonaPUCP, latitud, longitud, vali
                          codigoUsuario)
                          values (now(),"Explosion en KILO", "Pabellon A",-12.073157,-77.081164,true,"Fuga de gas ocurrido en la mañana, previo al abrir al local",
                          0,1,3,1,20201696),
-                         (now(),"Accidente de semana de Ingenieria","Cancha de minas",-12.072249,-77.081994,true,"Lesion de alumno en evento",0,1,2,1,19905060);                    
+                         (now(),"Accidente de semana de Ingenieria","Cancha de minas",-12.072249,-77.081994,true,"Lesion de alumno en evento",0,1,2,1,19905060);
+			 
+insert into incidenciasdestacadas (idIncidenciasDestacadas,contadorDestacado,idIncidencia) values (1,0,1),(2,0,2);
