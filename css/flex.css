@@ -1,44 +1,3 @@
-.heart {
-  background-image: url(../images/web_heart_animation.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 1450px;
-  cursor: pointer;
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-}
-.heart:hover
-{
-  background-position: right;
-}
-@-webkit-keyframes heartTransition
-{
-    0% {background-position: left;}
-    100% {background-position: right;}
-}
-
-@keyframes heartTransition
-{
-    0% {background-position: left;}
-    100% {background-position: right;}
-}
-
-.heart_animate
-{
-    -webkit-animation-duration: .8s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-name: heartTransition;
-    -webkit-animation-timing-function: steps(28);
-    animation-duration: .8s;
-    animation-iteration-count: 1;
-    animation-iteration-count: infinite;
-    animation-name: heartTransition;
-    animation-timing-function: steps(28);
-    background-position: right;
-}
-
 div.bi {
   height: 60vh;
   margin: 0;
@@ -73,7 +32,7 @@ i.robo{
 div.itemm {
   position: absolute;
   width: 30vh;
-  height: 45vh;
+  height: 40vh;
   background-color: coral;
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
@@ -85,23 +44,28 @@ div.itemm {
 
 div.itemm:nth-of-type(1) {
   --offset: 1;
-  background-color: #ffd670;
+  background-color: #163297;
+  color: aliceblue;
 }
 div.itemm:nth-of-type(2) {
   --offset: 2;
-  background-color: #ffd670;
+  background-color: #163297;
+  color: aliceblue;
 }
 div.itemm:nth-of-type(3) {
   --offset: 3;
-  background-color: #ffd670;
+  background-color: #163297;
+  color: aliceblue;
 }
 div.itemm:nth-of-type(4) {
   --offset: 4;
-  background-color: #ffd670;
+  background-color: #163297;
+  color: aliceblue;
 }
 div.itemm:nth-of-type(5) {
   --offset: 5;
-  background-color: #ffd670;
+  background-color: #163297;
+  color: aliceblue;
 }
 
 input:nth-of-type(1) {
